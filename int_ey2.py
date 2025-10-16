@@ -2,20 +2,21 @@
 
 # anagram
 from collections import Counter
-#
-#
-# def check_anagram(s1, s2):
-#     if len(s1) != len(s2):
-#         return False
-#
-#     str1 = Counter(s1)
-#     str2 = Counter(s2)
-#     return str1 == str2
-#
-# s1 = "listen"
-# s2 = "lists"
-# print(check_anagram(s1, s2))
 
+
+def check_anagram(s1, s2):
+    if len(s1) != len(s2):
+        return False
+
+    str1 = Counter(s1)
+    str2 = Counter(s2)
+    return str1 == str2
+
+s1 = "listen"
+s2 = "lists"
+print(check_anagram(s1, s2))
+
+# 1st non repeating char
 def first_non_repeating(a):
     k = set()
     for i in a:
@@ -29,9 +30,10 @@ def first_non_repeating(a):
 a = "nxtxto"
 print(first_non_repeating(a))
 
-
+# lambda function to square of a num
 t = lambda x:x*x
 print(t(2))
+
 
 
 
